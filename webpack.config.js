@@ -30,12 +30,52 @@ module.exports = {
        use: [
          'style-loader',
         //  MiniCssExtractPlugin.loader,
-         'css-loader',
+         {
+           loader: 'css-loader',
+           options: {
+             sourceMap: true
+           }
+         },
          'postcss-loader',
-         'sass-loader'
+         {
+           loader: 'sass-loader',
+           options: {
+             sourceMap: true,
+           }
+         }
        ]
-     }
+     },
+     {
+      test: /\.(png|jpe?g|gif|svg|ico)$/,
+      use: [
+        'url-loader?limit=10000',
+        {
+          loader: 'image-webpack-loader',
+          query: {
+            mozjpeg: {
+              progressive: true,
+            },
+            gifsicle: {
+              interlaced: false,
+            },
+            optipng: {
+              optimizationLevel: 7,
+            },
+            pngquant: {
+              quality: '65-90',
+              speed: 4,
+            },
+          },
+        }
+      ]
+    },
    ]
+  },
+  resolve: {
+    alias: {
+      Assets: path.resolve(__dirname, 'src/assets/'),
+      App: path.resolve(__dirname, 'src/')
+    }
   },
   plugins: [
     new CleanWebpackPlugin('dist', {}),

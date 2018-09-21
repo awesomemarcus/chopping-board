@@ -1,0 +1,24 @@
+@import 'App/Core/core-variables.scss';
+$nav-bg-color: #E36488;
+
+#main-nav {
+    z-index: 1;
+  max-height: $main-nav-height;
+  height: 100%;
+  background-color: $nav-bg-color;
+  
+  .nav-title {
+    font-size: 1.5em;
+    color: $p-color;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+#footer-nav {
+  background-color: #fff;
+  z-index: 1;
+  border-top: 1px solid #E3E3E3;
+}

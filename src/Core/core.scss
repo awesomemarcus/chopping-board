@@ -1,0 +1,37 @@
+@import 'App/Core/core-variables.scss';
+
+#fb-signup {
+  color: #fff;
+  width: 100%;
+  background-color: #6386CD;
+  box-shadow: inset 0 -1px 3px 0 #2B4B8B;
+}
+
+#google-signup {
+  color: #777777;
+  background-color: #F9F9F9;
+  border: 1px solid #CACACA;
+  box-shadow: inset 0 -1px 3px 0 #AEAEAE;
+}
+
+.btn-social, .btn-mobile {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  letter-spacing: 0.56px;
+}
+
+.min-height {
+  min-height: min-content;
+}
+
+.sub-title {
+  color: #fff;
+  letter-spacing: .56px;
+}
+
+a:not(.btn) {
+    color: $main-landing-color;
+    text-decoration: underline;
+  }
+

@@ -1,3 +1,87 @@
-body {
-  background-color: #eee;
+@import 'App/Core/core-variables.scss';
+
+.form-group {
+  .form-control {
+    border-radius: 8px;
+    height: 50px;
+  }
+}
+
+.main-body {
+  margin-top: $main-nav-height;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.pos-absolute {
+  position: absolute;
+
+  &.absolute-tl {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &.absolute-l {
+    left: 0;
+    right: auto;
+  }
+
+  &.absolute-r {
+    left: auto;
+    right: 0;
+  }
+
+  &.v-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &.full-size {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-height {
+    height: 100%;
+  }
+}
+
+.pos-fixed {
+  position: fixed;
+
+  &.fixed-tl {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &.fixed-tb {
+    bottom: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &.full-size {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-height {
+    height: 100%;
+  }
+}
+
+.pos-relative {
+  position: relative;
 }

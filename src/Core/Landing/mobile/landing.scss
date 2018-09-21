@@ -1,0 +1,16 @@
+@import 'App/Core/core-variables.scss';
+
+#landing {
+  background-image: url('../../../assets/landing_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #login-options {
+    margin-bottom: 45px;
+  }
+
+  p {
+    color: $p-color;
+  }
+}

@@ -1,0 +1,50 @@
+$meta-avatar-width: 100px;
+#home {
+  #search {
+    height: 45px;
+    background-color: #E7C3CD;
+    border: 1px solid #DB809A;
+    font-size: 20px;
+
+    &:focus, &:active {
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(238, 193, 205, 0.65);
+    }
+
+    &::placeholder {
+      color: #BA778A;
+    }
+  }
+
+  .icon {
+    font-size: 1.5em;
+    color: #BA778A;
+  }
+}
+
+.recipe-item {
+  p {
+    font-size: 0.8em;
+  }
+
+  .card-title {
+    color: #E36488;
+
+    small {
+      color: #79B8D1;
+      font-size: 0.6em;
+      font-weight: 700;
+    }
+  }
+  
+  .meta-info {
+    .icon {
+      color: #79B8D1 !important;
+    }
+  }
+
+  .meta-avatar {
+    max-width: $meta-avatar-width;
+    width: 100%;
+  }
+}

@@ -2,16 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader';
 import './scss/main.scss';
-console.log(process.env.NODE_ENV);
+import 'bootstrap/scss/bootstrap.scss';
+import App from './App';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faArrowLeft, faSearch, faStar, faDownload } from '@fortawesome/free-solid-svg-icons';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div><h1>Hello, Worlds!</h1></div>
-    );
-  }
-}
+library.add(faArrowLeft, faSearch, faStar, faDownload);
 
-const Root = hot(module)(App);
-
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

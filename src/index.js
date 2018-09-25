@@ -5,8 +5,8 @@ import './scss/main.scss';
 import 'bootstrap/scss/bootstrap.scss';
 import App from './App';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faArrowLeft, faSearch, faStar, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faSearch, faStar, faDownload, faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faArrowLeft, faSearch, faStar, faDownload);
+library.add(faArrowLeft, faSearch, faStar, faDownload, faCircleNotch);
 
 ReactDOM.render(<App />, document.getElementById('root'));
